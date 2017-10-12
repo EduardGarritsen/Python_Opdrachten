@@ -1,5 +1,5 @@
 import random
-
+a = 0
 def monopolyworp():
     hoogstewaarde = 6
     laagstewaarde = 1
@@ -7,9 +7,9 @@ def monopolyworp():
     y = random.randint(laagstewaarde, hoogstewaarde)
     z = x + y
 
-    a = 0
+    global a
 
-    if a == 3:
+    if a == 2 and x == y:
         print(str(x)+ " + " + str(y) + " = (direct naar de gevangenis)")
     elif x == y:
         a += 1
